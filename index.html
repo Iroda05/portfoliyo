@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Irodaxon — Axborot tizimlari</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="#top"><img src="images/favicon.svg" alt="" width="32" height="32"><span>Irodaxon</span></a>
+  <nav aria-label="Menu">
+    <a href="#about" data-i18n="nav_about"></a>
+    <a href="#skills" data-i18n="nav_skills"></a>
+    <a href="#projects" data-i18n="nav_projects"></a>
+    <a href="#contact" data-i18n="nav_contact"></a>
+  </nav>
+  <div class="tools">
+    <button id="lang" class="pill" aria-label="Language">UZ / EN</button>
+    <button id="theme" class="pill" aria-label="Theme"><span class="sun">☀</span><span class="moon">☾</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="net" aria-hidden="true"></canvas>
+    <div class="hero-text">
+      <p class="hello" data-i18n="hello"></p>
+      <h1 data-i18n="h1"></h1>
+      <p class="lead" data-i18n="lead"></p>
+      <div class="cta">
+        <a class="btn main" href="#projects" data-i18n="cta1"></a>
+        <a class="btn" href="#contact" data-i18n="cta2"></a>
+      </div>
+    </div>
+    <figure class="photo">
+      <img src="images/portrait.jpg" alt="Irodaxon" width="320" height="426">
+      <figcaption data-i18n="cap"></figcaption>
+    </figure>
+  </section>
+
+  <section id="about" class="block">
+    <h2 data-i18n="about_t"></h2>
+    <div class="about">
+      <p data-i18n="about_p"></p>
+      <dl>
+        <div><dt data-i18n="d_uni"></dt><dd data-i18n="v_uni"></dd></div>
+        <div><dt data-i18n="d_field"></dt><dd data-i18n="v_field"></dd></div>
+        <div><dt data-i18n="d_year"></dt><dd data-i18n="v_year"></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="skills" class="block alt">
+    <h2 data-i18n="skills_t"></h2>
+    <ul class="chips">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>SQL</li>
+      <li data-i18n="s_db"></li><li data-i18n="s_net"></li><li data-i18n="s_uml"></li>
+    </ul>
+  </section>
+
+  <section id="projects" class="block">
+    <h2 data-i18n="proj_t"></h2>
+    <div class="grid">
+      <article><img src="images/project1.svg" alt="" width="480" height="300"><h3 data-i18n="p1_t"></h3><p data-i18n="p1_d"></p></article>
+      <article><img src="images/project2.svg" alt="" width="480" height="300"><h3 data-i18n="p2_t"></h3><p data-i18n="p2_d"></p></article>
+      <article><img src="images/project3.svg" alt="" width="480" height="300"><h3 data-i18n="p3_t"></h3><p data-i18n="p3_d"></p></article>
+    </div>
+  </section>
+
+  <section id="contact" class="block contact">
+    <h2 data-i18n="contact_t"></h2>
+    <p data-i18n="contact_p"></p>
+    <a class="btn main big" href="mailto:iroda@example.uz">iroda@example.uz</a>
+    <p class="links"><a href="https://t.me/your_username">Telegram</a> <a href="https://github.com/your-username">GitHub</a></p>
+  </section>
+</main>
+<footer>© <span id="y"></span> Irodaxon · <span data-i18n="foot"></span></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
